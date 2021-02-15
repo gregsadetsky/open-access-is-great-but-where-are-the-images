@@ -1,0 +1,6 @@
+.DS_Store
+
+# _data contains the temporary files downloaded/processed by the scrapers
+# i.e. the Met's ~300Mb CSV files, each individual JSON response from their API, etc.
+0.scrapers/met/_data
+0.scrapers/chicago/_data
