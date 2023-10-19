@@ -6,4 +6,3 @@ all: $(DB)
 
 $(DB):
 	python3 2.sqlify/sqlify.py
-
