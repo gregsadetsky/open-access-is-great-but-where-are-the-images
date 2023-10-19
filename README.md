@@ -12,9 +12,7 @@ This project makes it easy to access the image URLs (see below), and provides (T
 ## Where is the data
 
 Artwork data / meta information has been collected in these SQLite database files:
-- TODO
-- TODO
-- TODO
+- `2.sqlify/open-access-is-great-but-where-are-the-images.db`
 
 ## Reasons to do this (/rant/soapbox)
 
