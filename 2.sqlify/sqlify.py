@@ -66,7 +66,7 @@ if __name__ == "__main__":
             curs.execute(CREATE_CHICAGO_IMAGES_INDEX_SQL)
 
         with open(os.path.join(BASE_DIR, "1.data", "chicago-images.csv"), "r") as fi:
-            curs.executemany("INSERT OR IGNORE INTO met_images VALUES (?, ?)", csv.reader(fi))
+            curs.executemany("INSERT OR IGNORE INTO chicago_images VALUES (?, ?)", csv.reader(fi))
 
 
     with sqlite3.connect(IMAGES_DB_PATH) as conn:
