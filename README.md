@@ -1,18 +1,15 @@
 ## TLDR
 
-Museums are sharing data on their artworks as part of "[Open Access](https://en.wikipedia.org/wiki/Open_access)" programs. Unfortunately, most museums don't make it easy to access the URLs of artwork images.
+Museums are sharing metadata on some of their artworks as part of "[Open Access](https://en.wikipedia.org/wiki/Open_access)" programs. Unfortunately, it's not easy at all to access the related artwork image URLs.
 
-This project makes it easy to access the image URLs (see below), and provides (TODO!) SQLite databases containing all of the artwork data published through Open Access.
+This project makes it easy to access that image url data in either CSV or SQLite format.
 
 ## Where are the images?
 
 - [Met - Images CSV](1.data/met-images.csv)
 - [Chicago - Images CSV](1.data/chicago-images.csv)
-
-## Where is the data
-
-Artwork data / meta information has been collected in these SQLite database files:
-- `2.sqlify/open-access-is-great-but-where-are-the-images.db`
+- thanks to [@whatever](https://github.com/whatever), the same image-identifier-to-url data is also available in sqlite3 format!
+  - sqlite3 file -> [open-access-is-great-but-where-are-the-images.db](2.sqlify/open-access-is-great-but-where-are-the-images.db)
 
 ## Reasons to do this (/rant/soapbox)
 
@@ -26,4 +23,7 @@ Artwork data / meta information has been collected in these SQLite database file
 
 - although CSV and JSON files are text-based and thus easy to consume on all platforms (the Met provides CSV, the Art Institute of Chicago JSON), past a certain file size or number of files, these become difficult to work with (does Excel allow importing a 300Mb CSV file?) For this reason, I will also be publishing (TODO) SQLite database files containing Open Access data for all museums.
 
-The SQLite format can be used / queried on a large number of platforms. You can use [DB Browser](https://sqlitebrowser.org/) on macOS, Windows and Linux to browse the files using a graphical interface. Bindings for most programming languages exist as well.
+## TODO
+
+- merge/include all data from openaccess (not just the image urls) in the CSV & sqlite data dumps i.e. merge metadata + urls in a single csv
+- refresh data as the last time all of this data was processed was in ~2021
