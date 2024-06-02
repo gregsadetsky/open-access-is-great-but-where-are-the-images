@@ -21,9 +21,11 @@ This project makes it easy to access that image url data in either CSV or SQLite
 
 - in the case of the Met, getting all the image URLs requires downloading a 300 Mb CSV file (as of Feb 2021) and making 600k API calls which take multiple hours to complete
 
-- although CSV and JSON files are text-based and thus easy to consume on all platforms (the Met provides CSV, the Art Institute of Chicago JSON), past a certain file size or number of files, these become difficult to work with (does Excel allow importing a 300Mb CSV file?) For this reason, I will also be publishing (TODO) SQLite database files containing Open Access data for all museums.
+- although CSV and JSON files are text-based and thus easy to consume on all platforms (the Met provides CSV, the Art Institute of Chicago JSON), past a certain file size or number of files, these become difficult to work with (does Excel allow importing a 300Mb CSV file?) For this reason, I am also be publishing a sqlite database containing Open Access data for both Chicago and the Met.
 
 ## TODO
 
 - merge/include all data from openaccess (not just the image urls) in the CSV & sqlite data dumps i.e. merge metadata + urls in a single csv
 - refresh data as the last time all of this data was processed was in ~2021
+  - update: the Met data was updated as of May 2024
+- expose a web version of the database using the sqlite-fs-http trick
